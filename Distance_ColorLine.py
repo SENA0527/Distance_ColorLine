@@ -113,9 +113,8 @@ class DrawOverrideOverride( OpenMayaRender.MPxDrawOverride ):
     #-----------------------------------------------
     def supportedDrawAPIs( self ):
 
-        #DirectXを使用して描画する
-        return OpenMayaRender.MRenderer.kDirectX11
-    
+        #描画する
+        return OpenMayaRender.MRenderer.kAllDevices
     #-----------------------------------------------
     def hasUIDrawables( self ):
         return True
